@@ -5,6 +5,7 @@ import About from "@/components/sections/About.section";
 import Services from "@/components/sections/Services.section";
 import Works from "@/components/sections/Works.section";
 import Contact from "@/components/sections/Contact.section";
+import BackToTopButton from "@/components/BackToTopButton";
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
       <footer className="bg-black py-12 text-gray-300">
         <Footer />
       </footer>
+      <BackToTopButton />
     </>
   );
 }
