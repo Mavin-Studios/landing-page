@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background-color: theme("colors.background");
+  color: theme("colors.text");
+}
+
+@layer components {
+  .btn-primary {
+    @apply max-h-max max-w-max  px-4 py-2 font-semibold border-none rounded-md outline-none bg-primary text-gray-100 transition ease-in hover:bg-trinidad-700 hover:scale-95;
+  }
+
+  .btn-secondary {
+    @apply max-h-max max-w-max  px-4 py-2 font-semibold border-none rounded-md outline-none bg-gray-900 text-gray-100 transition ease-in hover:bg-gray-700 hover:scale-95;
+  }
+
+  .nav-item {
+    @apply transition-colors hover:text-primary w-full xl:w-fit;
+  }
+
+  .nav-item a {
+    @apply p-4 w-full inline-block xl:p-2 xl:w-fit;
+  }
+}
